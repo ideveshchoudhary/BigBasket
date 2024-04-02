@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let pro of allProducts">
+            <div class="col-md-3 my-2 d-flex">
+                <div class="allproducts border p-3 rounded-3 ">
+                    <span>{{pro.categoryName}}</span>
+                    <img [src]="pro.productImageUrl" class="img-fluid p-4" alt="images">
+                    <h5 class="pro-name">{{pro.productName | uppercase}}</h5>
+                    <p class="desc">{{pro.productDescription | lowercase}}</p>
+                    <button class="btn btn-primary">Add To Cart</button>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
